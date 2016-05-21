@@ -1,0 +1,93 @@
+@import 'variables';
+
+$style-guide-colors: (
+  'blue': $blue,
+  'light-blue': $light-blue,
+  'red': $red,
+  'gold': $gold,
+  'dark-gray': $dark-gray,
+  'light-gray': $light-gray,
+  'black': $black,
+  'white': $white
+);
+
+
+// color blocks
+
+
+.block-color {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  font-size: 1.25rem;
+  text-align: center;
+  @media screen and (min-width: 28rem) {
+    width: 50%;
+  }
+  @media screen and (min-width: 42rem) {
+    width: calc(100%/3);
+  }
+  @media screen and (min-width: 56rem) {
+    width: 25%;
+  }
+  &:before {
+    content: ' ';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@each $label, $value in $style-guide-colors {
+  .block-#{$label} {
+    &:before {
+      background-color: $value;
+    }
+  }
+}
+
+.block-white {
+  &:before {
+    border: 1px solid $light-gray;
+  }
+}
+
+
+
+///
+
+
+
+.header {
+  background-color: $blue;
+  h1 {
+    color: $white;
+  }
+}
+
+
+.text-wrapper {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.color-band {
+  background-color: $gold;
+}
+
+
+
+.social-links-centered {
+  margin-left: auto;
+  margin-right: auto;
+}

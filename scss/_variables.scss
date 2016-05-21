@@ -1,0 +1,42 @@
+// NOTE: AUTO PREFIXER IS ON
+
+$base-font-size: 16px;
+$base-font-family: "ff-meta-web-pro", sans-serif;
+$base-font-style: normal;
+$base-font-weight: 400;
+$base-line-height: 1.5;
+
+$header-font-family: "alternate-gothic-no-3-d",sans-serif;
+$header-font-style: normal;
+$header-font-weight: 400;
+
+%header-font {
+  font-family: $header-font-family;
+  font-style: $header-font-style;
+  font-weight: $header-font-weight;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+
+
+// Brand Colors
+$blue: #111580;
+$light-blue: #7c81b8;
+$red: #ff230b;
+$gold: #ff9600;
+
+// secondary colors
+$dark-blue: #000064;
+$dark-red: #b41428;
+$dark-gold: #f57814;
+
+// Grays
+$dark-gray: #363636;
+$light-gray: #bababa;
+$black: #000;
+$white: #FFF;
+
+$site-menu-breakpoint: 960px;
+
+$column-breakpoint: 800px;

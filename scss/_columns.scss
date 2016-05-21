@@ -1,0 +1,85 @@
+
+/* Column Classes
+  Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
+--------------------------------------------- */
+
+.row {
+  @extend .clearfix;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.five-sixths,
+.four-sixths,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fourths,
+.three-sixths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.row-collapse {
+  margin-left: 0;
+  margin-right: 0;
+  > .five-sixths,
+  > .four-sixths,
+  > .one-fourth,
+  > .one-half,
+  > .one-sixth,
+  > .one-third,
+  > .three-fourths,
+  > .three-sixths,
+  > .two-fourths,
+  > .two-sixths,
+  > .two-thirds {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+
+@media only screen and (min-width: $column-breakpoint) {
+
+  .one-half,
+  .three-sixths,
+  .two-fourths {
+    width: 50%;
+  }
+
+  .one-third,
+  .two-sixths {
+    width: calc(100% * 1/3);
+  }
+
+  .four-sixths,
+  .two-thirds {
+    width: calc(100% * 2/3);
+  }
+
+  .one-fourth {
+    width: 25%;
+  }
+
+  .three-fourths {
+    width: 75%;
+  }
+
+  .one-sixth {
+    width: calc(100%/6);
+  }
+
+  .five-sixths {
+    width: calc(100% * 5/6);
+  }
+
+}
