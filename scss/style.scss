@@ -364,6 +364,13 @@ input[type="submit"],
 
 }
 
+.form-ask-a-question {
+  padding-top: 2rem;
+  @media only screen and (min-width: $column-breakpoint) {
+    padding-top: 0;
+  }
+}
+
 .footer-wrapper {
   background-color: darken($blue, 10%);
   color: $light-blue;
@@ -405,9 +412,10 @@ input[type="submit"],
     float: left;
     @media (min-width: $site-menu-breakpoint) {
       padding-right: 1.5rem;
-    }
-    &:last-child {
-      padding-right: 0;
+      &.last-desktop-item {
+        padding-right: 0;
+      }
+
     }
     > .button {
       margin-top: -0.5em;
@@ -622,6 +630,15 @@ input[type="submit"],
     color: $blue;
     &:hover, &:focus {
       color: $red;
+    }
+  }
+}
+
+.site-footer-social-links {
+  > li > a:not(.button) {
+    color: $white;
+    &:hover, &:focus {
+      color: $gold;
     }
   }
 }
