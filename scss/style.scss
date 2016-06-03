@@ -1234,7 +1234,7 @@ input[type="submit"],
 
   & + .site-inner {
     padding-top: 2rem;
-    .entry {
+    .entry:first-child {
       margin-top: -6rem;
     }
 
